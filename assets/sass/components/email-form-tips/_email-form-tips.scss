@@ -1,0 +1,50 @@
+@keyframes fadeInError {
+  0% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes fadeOutError {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+}
+
+.email-form-tips {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__header {
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__error {
+    display: none;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: hsl(4, 100%, 67%);
+
+    &_show {
+      animation: fadeInError 0.2s ease-in-out;
+    }
+    &_hidden {
+      animation: fadeOutError 0.2s ease-in-out;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.success-card {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  width: 30%;
+  min-height: min-content;
+  border-radius: 50px;
+  padding-top: 60px;
+  padding-left: 60px;
+  padding-bottom: 60px;
+  padding-right: 60px;
+  box-shadow: 0px 20px 50px var(--dark-slate-grey);
+  min-width: min-content;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__header {
+    color: var(--dark-slate-grey);
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    font-size: 1rem;
+    color: var(--dark-slate-grey);
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__submit {
+    border-radius: 5px;
+    height: 4rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+    font-weight: 700;
+    transition: all ease 0.5s;
+
+    &:hover {
+      transition: all ease 0.5s;
+      background-image: linear-gradient(to right, #ff5476, var(--tomato));
+      box-shadow: 0px 10px 30px var(--tomato);
+    }
+  }
+
+  &_show {
+    animation: fadeInCenter 0.3s ease-in-out;
+  }
+
+  &_hidden {
+    animation: fadeOutTop 0.3s ease-in-out;
+  }
+}

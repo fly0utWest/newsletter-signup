@@ -1,0 +1,68 @@
+@media all and (max-width: 955px) {
+  .main {
+    width: 762px;
+  }
+}
+
+@media all and (max-width: 765px) {
+  .main {
+    width: 75%;
+    padding: 0;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .grid {
+    display: flex;
+    justify-content: center;
+
+    &-column_right {
+      display: none;
+    }
+
+    &-column_left {
+      width: 100%;
+      height: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+    }
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+
+@media all and (max-width: 675px) {
+  .grid-column h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media all and (max-width: 435px) {
+  .main {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .success-card {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    padding: 90px 30px 50px 30px;
+
+    &__submit {
+      position: relative;
+      margin-top: auto;
+    }
+
+    &__text {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

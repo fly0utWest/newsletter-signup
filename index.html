@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/main.css" />
+    <script defer src="./assets/scripts/main.js"></script>
+
+    <title>Newsletter | FrontendMentor</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="grid">
+        <div class="grid-column grid-column_left">
+          <img
+            class="mobile"
+            src="./assets/images/illustration-sign-up-mobile.svg"
+            alt=""
+            srcset=""
+          />
+          <div class="container">
+            <h1 class="header grid-column__header">Stay updated!</h1>
+            <p class="grid-column__text">
+              Join 60,000+ product managers recieving monthly updates on:
+            </p>
+            <div class="advantages">
+              <ul class="advantages-list">
+                <li class="advantages-list__element">
+                  Product discovery and building what matters
+                </li>
+                <li class="advantages-list__element">
+                  Measuring to ensure updates are a success
+                </li>
+                <li class="advantages-list__element">Add much more!</li>
+              </ul>
+            </div>
+            <form class="email-form" id="form">
+              <div class="email-form-tips">
+                <h2 class="email-form-tips__header">Email address</h2>
+                <span class="email-form-tips__error" id="error-message"
+                  >Your email required</span
+                >
+              </div>
+              <input
+                id="email-input"
+                class="email-form__input"
+                type="text"
+                placeholder="email@company.com"
+              />
+              <button id="submit-button" class="email-form__submit" disabled>
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="grid-column grid-column_right">
+          <img
+            class="grid-image"
+            src="./assets/images/illustration-sign-up-desktop.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </main>
+    <div class="success-card">
+      <div class="success-card__container">
+        <div class="check">
+          <img src="./assets/images/icon-success.svg" alt="" />
+        </div>
+        <h1 class="success-card__header">Thanks for subscribing!</h1>
+        <p class="success-card__text">
+          A confirmation email has been sent to <br /><span
+            id="entered-email"
+          ></span
+          >. Please open it and click the button inside to confirm your
+          subscription.
+        </p>
+        <button class="success-card__submit" id="dismiss-button">
+          Dismiss message
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

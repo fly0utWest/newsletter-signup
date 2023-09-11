@@ -211,7 +211,7 @@ main {
   height: 100%;
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 2rem;
-  column-gap: 2rem;
+       column-gap: 2rem;
   min-height: -moz-max-content;
   min-height: max-content;
 }
@@ -246,7 +246,7 @@ main {
 }
 .grid-image {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   width: 394px;
   height: 565px;
   border-radius: 25px;
@@ -264,7 +264,7 @@ main {
 }
 .advantages-list__element::before {
   position: relative;
-  content: url("../assets/images/icon-list.svg");
+  content: url(../assets/images/icon-list.svg);
   top: 4px;
   padding-right: 0.8rem;
 }
@@ -414,8 +414,9 @@ main {
 }
 @media all and (max-width: 435px) {
   .main {
+    overflow-y: scroll;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     border-radius: 0;
   }
   .success-card {
